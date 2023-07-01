@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url("img/bg.png");
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+
+nav {
+    max-width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    /* align-items: center;
+    justify-content: space-between; */
+    height: 40px;
+}
+
+nav:hover {
+    background: #252525;
+}
+
+nav:hover .menu-horizontal>li>a {
+    color: white;
+}
+
+.menu-horizontal {
+    list-style: none;
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.menu-horizontal>li>a {
+    display: block;
+    padding: 15px 20px;
+    color: #252525;
+    text-decoration: none;
+}
+
+
+/* .menu-horizontal>li:hover {
+    background-color: red;
+} */
+
+.menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 150px;
+    background-color: #252525;
+}
+
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+    margin: 0;
+}
+
+.menu-vertical li:hover {
+    background-color: black;
+}
+
+.menu-vertical li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    height: 2vh;
+    margin: 0;
+    padding: 15px 15px 15px 15px; 
+}
+
+
+main {
+    padding: 3pc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    gap: 10vh;
+    justify-content: space-around;
+}
+
+.imagen{
+    position: absolute;
+    top: 25%;
+    
+}
+
+
+
+
+span {
+    color: #ffbd59;
+}
+
+.texto {
+    padding: 50px;
+} 
